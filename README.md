@@ -1,0 +1,1 @@
+vamos manejando la seriedad 
