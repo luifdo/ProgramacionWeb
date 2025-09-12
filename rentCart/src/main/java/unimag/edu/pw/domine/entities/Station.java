@@ -13,7 +13,7 @@ import java.util.Set;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-
+@Table (name = "Stations")
 public class Station {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -28,7 +28,7 @@ public class Station {
     @Column(nullable = false)
     String City;
 
-    @OneToMany(mappedBy = "Station")
+    @OneToMany(mappedBy = "Stations")
     private Set<Vehicle> Vehicles;
 
 }

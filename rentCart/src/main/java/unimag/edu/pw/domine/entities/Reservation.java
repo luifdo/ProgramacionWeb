@@ -17,6 +17,7 @@ import java.util.List;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
+@Table (name = "Reservations")
 public class Reservation {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
